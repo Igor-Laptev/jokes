@@ -1,5 +1,3 @@
-
-
 interface Props {
   joke: {
     id: string;
