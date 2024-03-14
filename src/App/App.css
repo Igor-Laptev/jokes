@@ -32,6 +32,7 @@
   width: 100%;
   max-width: 626px;
   margin: 128px auto 0;
+  
 }
 .search-input {
   width: 100%;
@@ -155,4 +156,47 @@
   font-family: "Montserrat", sans-serif;
   width: 458px;
   font-size: 16px;
+}
+
+@media (max-width: 767px) {
+  .search-result,
+  .search-container {
+    width: 100%;
+    max-width: none;
+    position: relative;
+    left: auto;
+    top: auto;
+    transform: none;
+  }
+
+  .jokes-container {
+    width: 100%;
+    left: auto;
+    top: auto;
+    position: relative;
+    flex-direction: column;
+  }
+
+  .joke-card.large,
+  .joke-card.small {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .joke-footer.large,
+  .joke-footer.small {
+    width: auto;
+  }
+}
+
+@media (max-width: 479px) {
+  .search-input {
+    padding-left: 15px;
+    height: 50px;
+    font-size: 18px;
+  }
+
+  .search-input::placeholder {
+    font-size: 18px;
+  }
 }
